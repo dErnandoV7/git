@@ -1,0 +1,109 @@
+# configurar nome de usuario:
+git config --global user.name "[nome do usuario]"
+
+# configurar email de usuario:
+git config --global user.email [email de usuario]
+
+# exibir lista de usuarios:
+git config --global --list
+
+# (nao é de git) criar arquivos:
+touch [nome do arquivo + sua extenção]
+ex: touch style.css script.js
+
+# 'transformar' uma pasta em repositorio git:
+git init
+
+# clonar repositorio existente
+git clone [url do repositorio]
+ex: git clone https://github.com/dErnandoV7/portfolio.git
+
+# levar arquivo para stage:
+git add [nomedoarquivo.extenção]
+ex: git add index.html
+
+# exibir status:
+git status
+
+# levar todos os arquivos que não estão no stage para dentro do stage:
+git add .
+
+# levar pro stage por seleção:
+git add *.[extenção]
+ex: git add *.css
+ex: git add *.html
+
+# remover arquivo do stage:
+git reset [nome do arquivo + extenção]
+ex: git reset index.html
+
+# desfazer alterações feitas em um arquivo
+git restore [nome do arquivo + extenção]
+
+# commit
+git commit -m "[texto do commit]"
+-m = mensagem texto para o commit
+
+# adicionar arquivos e commitar com apenas um comando
+git commit -a -m "[texto para o commit]"
+-a = adicionar todos os arquivos que ainda não foram adicionados no stage
+
+# alterar o último commit
+git commit --amend -m "[texto para o commit]"
+[--amend]
+
+# ver mudanças do local para o que está no stage
+git diff
+
+# ver mudanças do que está no stage para o último commit
+git diff --staged
+
+# ver histórico de commits
+git log
+
+# ver últimos X commits
+git log -[numero de commits]
+ex: git log -4
+
+# ver últimas alterações com cada alteração usando apenas uma linha
+git log --oneline
+
+# filtra alterações por autor
+git log --author="[nome do autor]"
+ex: git log --author="Ernando"
+
+# histórico de autores e seus alterações
+git shortlog
+
+# histórico de quantidade de alterações por autor
+git shortlog -sn
+
+# ações feitas dentro do repositório
+git reflog 
+
+# criar branch
+git branch [nome da branch]
+ex: git branch dev
+
+# deletar branch
+git branch -D [nome da branch]
+ex: git branch -D dev
+
+# criar e ir diretamente para a branch criada
+git checkout -b [nome da branch]
+ex: git checkout -b dev
+
+# exibir branch
+git branch
+
+# alterar nome da branch
+git branch -m [novo nome para a branch]
+
+(será alterado o nome da branch em que eu estiver)
+
+ex: git branch -m developed
+
+
+# exibir o log de uma branch específica
+git log [nome da branch]
+ex: git log dev
