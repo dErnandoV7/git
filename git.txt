@@ -130,3 +130,6 @@ git remote show origin
 
 # mudar a url do remote
 git remote set-url origin [nova url]
+
+# commit de uma branch para outra
+git merge [nome da branch que tem o commit]
