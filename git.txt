@@ -103,7 +103,9 @@ git branch -m [novo nome para a branch]
 
 ex: git branch -m developed
 
-
 # exibir o log de uma branch específica
 git log [nome da branch]
 ex: git log dev
+
+# comparação entre branch
+git diff [nome da primeira branch] [nome da segunda branch]
