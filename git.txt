@@ -121,3 +121,5 @@ git remote remove origin
 
 # ver informações do branch, repositorio remoto
 git remote -v
+
+# trazer alterações do repositorio remoto para o repositorio local
