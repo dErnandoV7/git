@@ -123,3 +123,4 @@ git remote remove origin
 git remote -v
 
 # trazer alterações do repositorio remoto para o repositorio local
+git pull origin main
