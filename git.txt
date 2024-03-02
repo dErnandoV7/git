@@ -114,4 +114,10 @@ git diff [nome da primeira branch] [nome da segunda branch]
 git remote add origin [link disponibilizado no github]
 
 # enviar mudanças para o repositório remoto
-git push -u origin main
+git push -u origin main 
+
+# remover repositorio remoto
+git remote remove origin
+
+# ver informações do branch, repositorio remoto
+git remote -v
