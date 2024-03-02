@@ -124,3 +124,9 @@ git remote -v
 
 # trazer alterações do repositorio remoto para o repositorio local
 git pull origin main
+
+# ver mais informações sobre urls, branch...
+git remote show origin
+
+# mudar a url do remote
+git remote set-url origin [nova url]
