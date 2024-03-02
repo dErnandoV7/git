@@ -109,3 +109,9 @@ ex: git log dev
 
 # comparação entre branch
 git diff [nome da primeira branch] [nome da segunda branch]
+
+# adicionar repositorio remoto
+git remote add origin [link disponibilizado no github]
+
+# enviar mudanças para o repositório remoto
+git push -u origin main
