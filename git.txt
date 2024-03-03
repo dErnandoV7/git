@@ -133,3 +133,33 @@ git remote set-url origin [nova url]
 
 # commit de uma branch para outra
 git merge [nome da branch que tem o commit]
+
+# mudar a base de uma branch
+git rebase [nome da branch]
+
+# desfazer mudanças locais que não estão no stage
+git checkout [arquivo que foi feito as mudanças]
+ex: git checkout script.html
+
+# desfazer mudanças feitas após o último commit
+git reset --hard HEAD
+
+# voltar para commit anterior
+git reset --hard HEAD~1
+
+# reverter para commit anterior
+git revert ['id' do commit]
+
+# guardas mudanças no código após o commit (mesmo que o código venha a ser apagado depois)
+git stash 
+
+# usar mudanças guardadas no stash
+
+git stash apply
+- deva forma, as mudanças continuaram armazenadas
+
+git stash pop
+- deva forma, após usar o stash, o código armazenado sera descartado
+
+# marcação
+git tag [nome da tag]
